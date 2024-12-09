@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "40d53e2cf5d8481f3581affb1f6f62a4",
+    "content-hash": "370c0502e3fd3a1ce240a1efa9a2f284",
     "packages": [
         {
             "name": "bojaghi/continy",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bojaghi/continy.git",
-                "reference": "14162712886b669c92f7a3f19daa5745dd0d8013"
+                "reference": "ac58248d7bc2d08b807772d25b157b46138f9b40"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bojaghi/continy/zipball/14162712886b669c92f7a3f19daa5745dd0d8013",
-                "reference": "14162712886b669c92f7a3f19daa5745dd0d8013",
+                "url": "https://api.github.com/repos/bojaghi/continy/zipball/ac58248d7bc2d08b807772d25b157b46138f9b40",
+                "reference": "ac58248d7bc2d08b807772d25b157b46138f9b40",
                 "shasum": ""
             },
             "require": {
@@ -50,9 +50,9 @@
             "homepage": "https://github.com/bojaghi/continy",
             "support": {
                 "issues": "https://github.com/bojaghi/continy/issues",
-                "source": "https://github.com/bojaghi/continy/tree/1.0.0"
+                "source": "https://github.com/bojaghi/continy/tree/1.0.1"
             },
-            "time": "2024-10-26T14:41:39+00:00"
+            "time": "2024-12-09T09:32:53+00:00"
         },
         {
             "name": "bojaghi/contract",
@@ -134,6 +134,46 @@
                 "source": "https://github.com/bojaghi/custom-posts/tree/1.0.1"
             },
             "time": "2024-11-24T14:46:49+00:00"
+        },
+        {
+            "name": "bojaghi/custom-taxonomies",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bojaghi/custom-taxonomies.git",
+                "reference": "a547e5e81cb42f40bd3fde36a6a848b685912d62"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bojaghi/custom-taxonomies/zipball/a547e5e81cb42f40bd3fde36a6a848b685912d62",
+                "reference": "a547e5e81cb42f40bd3fde36a6a848b685912d62",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "bojaghi/wp-tests": "^1.0",
+                "phpunit/phpunit": "^9",
+                "yoast/phpunit-polyfills": "^3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Bojaghi\\Tax\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "WordPress taxonomy package",
+            "homepage": "https://github.com/bojaghi/custom-taxonomies",
+            "support": {
+                "issues": "https://github.com/bojaghi/custom-taxonomies/issues",
+                "source": "https://github.com/bojaghi/custom-taxonomies/tree/1.0.0"
+            },
+            "time": "2024-11-24T14:43:33+00:00"
         },
         {
             "name": "bojaghi/fields",

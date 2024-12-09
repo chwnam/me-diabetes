@@ -5,17 +5,22 @@
     "type": "wordpress-plugin",
     "license": "GPL-2.0-or-later",
     "autoload": {
-        "psr-4": {}
+        "psr-4": {
+            "Changwoo\\MeDiabetes\\": "src/"
+        }
     },
     "autoload-dev": {
-        "psr-4": {}
+        "psr-4": {
+            "Changwoo\\MeDiabetes\\Tests\\": "tests/"
+        }
     },
     "authors": [],
     "require": {
         "php": ">=8.3",
         "bojaghi/continy": "^1.0",
         "bojaghi/fields": "^1.0",
-        "bojaghi/custom-posts": "^1.0"
+        "bojaghi/custom-posts": "^1.0",
+        "bojaghi/custom-taxonomies": "^1.0"
     },
     "require-dev": {
         "bojaghi/wp-tests": "^1.0",
