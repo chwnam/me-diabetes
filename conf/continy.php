@@ -4,6 +4,7 @@
  */
 
 use Bojaghi\Continy\Continy;
+use Changwoo\MeDiabetes\Modules;
 
 if (!defined('ABSPATH')) {
     exit;
@@ -22,22 +23,35 @@ return [
     ///////////////////////////////////////////////////////////////////////////
     // Objects binding
     'bindings'  => [
-        'bojaghi/CPT'  => \Bojaghi\Cpt\CustomPosts::class,
-        'bojaghi/Tax'  => \Bojaghi\Tax\CustomTaxonomies::class,
-        'customFields' => \Changwoo\MeDiabetes\Modules\DiabetesFields::class
+        'bojaghi/CPT'   => \Bojaghi\Cpt\CustomPosts::class,
+        'bojaghi/Seeds' => \Bojaghi\SeedObjects\SeedsObjects::class,
+        'bojaghi/Tax'   => \Bojaghi\Tax\CustomTaxonomies::class,
+        'customFields'  => Modules\DiabetesFields::class
     ],
     //
     ///////////////////////////////////////////////////////////////////////////
     // Argument injection
     'arguments' => [
-        'bojaghi/CPT'  => __DIR__ . '/cpt.php',
-        'bojaghi/Tax'  => __DIR__ . '/tax.php',
-        'customFields' => __DIR__ . '/fields.php',
+        'bojaghi/CPT'   => __DIR__ . '/cpt.php',
+        'bojaghi/Seeds' => function (Continy $continy) {
+            return [
+                'args' => [
+                    'isPlugin' => true,
+                    'mainFile' => $continy->getMain(),
+                    'terms'    => __DIR__ . '/terms.php',
+                ]
+            ];
+        },
+        'bojaghi/Tax'   => __DIR__ . '/tax.php',
+        'customFields'  => __DIR__ . '/fields.php',
     ],
     //
     ///////////////////////////////////////////////////////////////////////////
     // Modules setting
     'modules'   => [
+        '_'    => [
+            'bojaghi/Seeds',
+        ],
         'init' => [
             Continy::PR_DEFAULT => [
                 'bojaghi/CPT',
