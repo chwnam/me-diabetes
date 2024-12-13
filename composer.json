@@ -7,7 +7,11 @@
     "autoload": {
         "psr-4": {
             "Changwoo\\MeDiabetes\\": "src/"
-        }
+        },
+        "files": [
+            "src/constants.php",
+            "src/functions.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
@@ -20,7 +24,8 @@
         "bojaghi/continy": "^1.0",
         "bojaghi/fields": "^1.0",
         "bojaghi/custom-posts": "^1.0",
-        "bojaghi/custom-taxonomies": "^1.0"
+        "bojaghi/custom-taxonomies": "^1.0",
+        "bojaghi/seed-objects": "^1.0"
     },
     "require-dev": {
         "bojaghi/wp-tests": "^1.0",

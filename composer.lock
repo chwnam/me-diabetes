@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "370c0502e3fd3a1ce240a1efa9a2f284",
+    "content-hash": "9ca47eb93898758148065f8468511100",
     "packages": [
         {
             "name": "bojaghi/continy",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bojaghi/continy.git",
-                "reference": "ac58248d7bc2d08b807772d25b157b46138f9b40"
+                "reference": "1b6d18dc04a4280769fc2632e5d435c333e9bb59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bojaghi/continy/zipball/ac58248d7bc2d08b807772d25b157b46138f9b40",
-                "reference": "ac58248d7bc2d08b807772d25b157b46138f9b40",
+                "url": "https://api.github.com/repos/bojaghi/continy/zipball/1b6d18dc04a4280769fc2632e5d435c333e9bb59",
+                "reference": "1b6d18dc04a4280769fc2632e5d435c333e9bb59",
                 "shasum": ""
             },
             "require": {
@@ -50,9 +50,9 @@
             "homepage": "https://github.com/bojaghi/continy",
             "support": {
                 "issues": "https://github.com/bojaghi/continy/issues",
-                "source": "https://github.com/bojaghi/continy/tree/1.0.1"
+                "source": "https://github.com/bojaghi/continy/tree/1.0.2"
             },
-            "time": "2024-12-09T09:32:53+00:00"
+            "time": "2024-12-11T11:30:18+00:00"
         },
         {
             "name": "bojaghi/contract",
@@ -221,6 +221,100 @@
                 "source": "https://github.com/bojaghi/fields/tree/1.0.0"
             },
             "time": "2024-12-01T17:51:59+00:00"
+        },
+        {
+            "name": "bojaghi/helper",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bojaghi/helper.git",
+                "reference": "b3289e08db29a763c2724d8afb7637c75d3c7315"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bojaghi/helper/zipball/b3289e08db29a763c2724d8afb7637c75d3c7315",
+                "reference": "b3289e08db29a763c2724d8afb7637c75d3c7315",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "bojaghi/wp-tests": "^1.0",
+                "phpunit/phpunit": "^9",
+                "yoast/phpunit-polyfills": "^3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Bojaghi\\Helper\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "changwoo",
+                    "email": "ep6tri@hotmail.com"
+                }
+            ],
+            "description": "Helper methods collection.",
+            "homepage": "https://github.com/bojaghi/helper",
+            "support": {
+                "issues": "https://github.com/bojaghi/helper/issues",
+                "source": "https://github.com/bojaghi/helper/tree/1.0.0"
+            },
+            "time": "2024-12-11T00:43:54+00:00"
+        },
+        {
+            "name": "bojaghi/seed-objects",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bojaghi/seed-objects.git",
+                "reference": "64a9147051db10a42dbb3f86c50f7263a8ab54e9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bojaghi/seed-objects/zipball/64a9147051db10a42dbb3f86c50f7263a8ab54e9",
+                "reference": "64a9147051db10a42dbb3f86c50f7263a8ab54e9",
+                "shasum": ""
+            },
+            "require": {
+                "bojaghi/contract": "^1.0",
+                "bojaghi/helper": "^1.0",
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "bojaghi/wp-tests": "^1.0",
+                "phpunit/phpunit": "^9",
+                "yoast/phpunit-polyfills": "^3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Bojaghi\\SeedObjects\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "changwoo",
+                    "email": "ep6tri@hotmail.com"
+                }
+            ],
+            "description": "Seed objects module.",
+            "homepage": "https://github.com/bojaghi/seed-objects",
+            "support": {
+                "issues": "https://github.com/bojaghi/seed-objects/issues",
+                "source": "https://github.com/bojaghi/seed-objects/tree/1.0.0"
+            },
+            "time": "2024-12-11T11:43:24+00:00"
         },
         {
             "name": "psr/container",
